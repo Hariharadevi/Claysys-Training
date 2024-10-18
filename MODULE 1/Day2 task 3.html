@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <title>css basics review</title>
+    <style>
+            nav {
+            background-color: #333;
+            text-align: center;
+
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container1 {
+            width: 100%;
+            margin: 0 15px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-first{
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container3{
+            margin:auto;
+            border:3px solid #080101;
+            padding: 10px;
+            width:auto;
+            height:100px;
+            background-color:#fff;
+        }
+        .container4{
+            margin:auto;
+            border:3px solid #080101;
+            padding: 10px;
+            width:30%;
+            height:50%;
+            background-color:#fff;
+        }
+        .container5{
+            margin:auto;
+            border:3px solid #080101;
+            padding: 10px;
+            width:30%;
+            height:50%;
+            background-color:#fff;
+        }
+        .container2 {
+            width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            ul li:hover{
+                color: green;
+            }
+            ul li:active{
+                color:red;
+            }
+            p::before{
+                content:"start:";
+                color: blue;
+            }
+            p::after{
+                content: "end:";
+                color: blue;
+
+            }
+         
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        Footer{
+            text-align: center;
+            padding:10px;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<h1>CSS Basics Review</h1>
+<nav>
+    <a href="#"><center>Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</center></a>
+</nav>
+<body>
+    <header>
+
+        <div class="container1">
+            <h2 align="left">INTRODUCTION</h2>
+            <p>This is a brief introduction paragraph that uses different text such as font size, color, line hieght</p>
+    
+        </div>
+    </header>
+    <main>
+        <section class="section-first">
+            <div  class="container3">
+                <h4 align="left">BOX1:Title</h4>
+                <p1>content 1<br></p1>
+                <p2>Background,borders,margins,padding</p2>
+            </div>
+            <div  class="container3">
+                <h4 align="left">BOX1:Title</h4>
+                <p1>content 1<br></p1>
+                <p2>Background,borders,margins,padding</p2>
+            </div>
+            <div  class="container3">
+                <h4 align="left">BOX1:Title</h4>
+                <p1>content 1<br></p1>
+                <p2>Background,borders,margins,padding</p2>
+            </div>
+        </section>
+<section>
+
+    <div class="container2">
+        <h3 align="left">Psecudo class exapmle</h3>
+        <p1>item1(hover,active,etc)<br></p1>
+        <p2>item2</p2>
+        <h4 align="left">psecudo element example</h4>
+        <p>before and ::after applied to this paragraph </p>
+    </div>
+</section>
+    </main>
+   <footer>
+            <p><center> @2024 CSS Basics Review</center></p>
+
+   </footer>
+
+</body>

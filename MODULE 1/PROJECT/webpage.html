@@ -1,0 +1,527 @@
+<html>
+<head>
+    <title>
+        Order Details
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-sidebar">
+            <i class="fas fa-tachometer-alt active">
+            </i>
+            <i class="fas fa-box">
+            </i>
+            <i class="fas fa-users">
+            </i>
+            <i class="fas fa-shopping-cart">
+            </i>
+            <i class="fas fa-list">
+            </i>
+            <i class="fas fa-chart-bar">
+            </i>
+            <i class="fas fa-truck">
+            </i>
+        </div>
+        <div class="sub-sidebar">
+            <div style="display: flex; align-items: center;">
+                <img alt="Profile Picture" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/kj9oN3q0tXI4E1XuhfmpaOH61PxdXMNMGQVxk2OwQpLZL0xJA.jpg"
+                    width="50" />
+                <div style="margin-left: 10px;">
+                    <h2>
+                        Helen Derinlacs
+                    </h2>
+                    <p>
+                        Sales Manager
+                    </p>
+                </div>
+            </div>
+            <ul>
+                <li class="active">
+                    Dashboard
+                </li>
+                <li class="dropdown">
+                    Product Management
+                    <i class="fas fa-chevron-down">
+                    </i>
+                </li>
+                <li class="dropdown">
+                    Sales Management
+                    <i class="fas fa-chevron-down">
+                    </i>
+                </li>
+                <li class="dropdown">
+                    Order Management
+                    <i class="fas fa-chevron-down">
+                    </i>
+                </li>
+                <li>
+                    Order Details
+                </li>
+                <li>
+                    Leaderboard
+                </li>
+                <li>
+                    Supplier Management
+                </li>
+            </ul>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+
+            <ul>
+                <li>
+                    <i class="fas fa-question-circle">
+                    </i>
+                    Help Started
+                </li>
+                <li>
+                    <i class="fas fa-folder-plus">
+                    </i>
+                    Add New Folder
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="top-right-buttons">
+                <button>
+                    Open Documentation
+                </button>
+                <button>
+                    Setup Details
+                </button>
+                <button class="menu-button">
+                    <i class="fas fa-ellipsis-v">
+                    </i>
+                </button>
+            </div>
+            <h1>
+                Order Details
+                <i class="fas fa-question-circle">
+                </i>
+            </h1>
+            <p>
+                In the order details section, you can view and manage all orders with their details. You can view and
+                edit many information such as IDs of all orders, ordered product, order date, and order status. Access
+                to this area is limited. Only administrators and team leaders can reach. The changes you make will be
+                approved after they are checked.
+            </p>
+            <div class="tabs">
+                <div class="active">
+                    All Orders
+                </div>
+                <div>
+                    Completed
+                </div>
+                <div>
+                    Continuing
+                </div>
+                <div>
+                    Restitute
+                </div>
+                <div>
+                    Canceled
+                </div>
+            </div>
+            <div class="search-bar">
+                <input placeholder="Search for order ID, customer, order status or something..." type="text" />
+                <i class="fas fa-search">
+                </i>
+                <div class="right-buttons">
+                    <button>
+                        <i class="fas fa-filter">
+                        </i>
+                        Filter
+                    </button>
+                    <button>
+                        <i class="fas fa-paperclip">
+                        </i>
+                        Attachment
+                    </button>
+                    <div class="export-button">
+                        <button>
+                            <i class="fas fa-file-export">
+                            </i>
+                            Export
+                        </button>
+                        <div class="dropdown-menu">
+                            <div>
+                                Export as .xlsx
+                            </div>
+                            <div>
+                                Export as .doc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Order ID
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            Customer
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            Order
+                        </th>
+                        <th>
+                            Date
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            Pricing
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            Delivery Status
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            Payment
+                            <i class="fas fa-chevron-down">
+                            </i>
+                        </th>
+                        <th>
+                            status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="tbody-1">
+                    <tr>
+                        <td>
+                            AKN12508
+                        </td>
+                        <td>
+                            Olivera Nules
+                        </td>
+                        <td>
+                            Nike Tshirt
+                        </td>
+                        <td>
+                            12.04.2021
+                        </td>
+                        <td>
+                            $24,90
+                        </td>
+                        <td class="status restitute">
+                            Restitute
+                        </td>
+                        <td>
+                            Credit Card
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SRT32123
+                        </td>
+                        <td>
+                            Alexandre Selinelli
+                        </td>
+                        <td>
+                            Adidas Hat
+                        </td>
+                        <td>
+                            22.05.2021
+                        </td>
+                        <td>
+                            $19,90
+                        </td>
+                        <td class="status complete">
+                            Complete
+                        </td>
+                        <td>
+                            Bank Transfer
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TML30321
+                        </td>
+                        <td>
+                            Selman Kalman
+                        </td>
+                        <td>
+                            Hummel Sneakers
+                        </td>
+                        <td>
+                            08.03.2021
+                        </td>
+                        <td>
+                            $89,90
+                        </td>
+                        <td class="status complete">
+                            Complete
+                        </td>
+                        <td>
+                            Credit Card
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                        </td>
+                        </i>
+                    </tr>
+                    <tr>
+                        <td>
+                            KKA45012
+                        </td>
+                        <td>
+                            David Dorenli
+                        </td>
+                        <td>
+                            Puma Shorts
+                        </td>
+                        <td>
+                            16.06.2021
+                        </td>
+                        <td>
+                            $19,90
+                        </td>
+                        <td class="status restitute">
+                            Restitute
+                        </td>
+                        <td>
+                            Credit Card
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NNP23421
+                        </td>
+                        <td>
+                            Marcus Genihales
+                        </td>
+                        <td>
+                            Nike Glove
+                        </td>
+                        <td>
+                            24.04.2021
+                        </td>
+                        <td>
+                            $39,90
+                        </td>
+                        <td class="status continue">
+                            Continue
+                        </td>
+                        <td>
+                            Bank Transfer
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TTS23089
+                        </td>
+                        <td>
+                            Kemal Solomon
+                        </td>
+                        <td>
+                            Nike Hat
+                        </td>
+                        <td>
+                            14.04.2021
+                        </td>
+                        <td>
+                            $29,90
+                        </td>
+                        <td class="status canceled">
+                            Canceled
+                        </td>
+                        <td>
+                            Bank Transfer
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            KLB24100
+                        </td>
+                        <td>
+                            Henry Kweale
+                        </td>
+                        <td>
+                            Adidas Sneakers
+                        </td>
+                        <td>
+                            12.05.2021
+                        </td>
+                        <td>
+                            $99,90
+                        </td>
+                        <td class="status complete">
+                            Complete
+                        </td>
+                        <td>
+                            Credit Card
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ABL90821
+                        </td>
+                        <td>
+                            Hanna Marina
+                        </td>
+                        <td>
+                            Puma Bag
+                        </td>
+                        <td>
+                            01.06.2021
+                        </td>
+                        <td>
+                            $39,90
+                        </td>
+                        <td class="status continue">
+                            Continue
+                        </td>
+                        <td>
+                            PayPal
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HJS09213
+                        </td>
+                        <td>
+                            Stevan Kolman
+                        </td>
+                        <td>
+                            Nike Bag
+                        </td>
+                        <td>
+                            30.02.2021
+                        </td>
+                        <td>
+                            $49,90
+                        </td>
+                        <td class="status canceled">
+                            Canceled
+                        </td>
+                        <td>
+                            Bank Transfer
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HPO30421
+                        </td>
+                        <td>
+                            Haruna Mahmudi
+                        </td>
+                        <td>
+                            Adidas Sneakers
+                        </td>
+                        <td>
+                            24.06.2021
+                        </td>
+                        <td>
+                            $79,90
+                        </td>
+                        <td class="status restitute">
+                            Restitute
+                        </td>
+                        <td>
+                            Credit Card
+                        </td>
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HRS12040
+                        </td>
+                        <td>
+                            Selin Selman
+                        </td>
+                        <td>
+                            Hummel Hat
+                        </td>
+                        <td>
+                            12.06.2021
+                        </td>
+                        <td>
+                            $14,90
+                        </td>
+                        <td class="status complete">
+                            Complete
+                        </td>
+                        <td>
+                            Bank Transfer
+                        <td>
+                            <i class="fas fa-external-link-alt">
+                            </i>
+                        </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <div class="page-info">
+                    <span>
+                        1-11 of 1200 pages
+                    </span>
+                </div>
+                <div class="page-nav">
+                    <span>
+                        The page you're on
+                    </span>
+                    <select>
+                        <option>
+                            1
+                        </option>
+                    </select>
+                    <i class="fas fa-chevron-left">
+                    </i>
+                    <i class="fas fa-chevron-right">
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

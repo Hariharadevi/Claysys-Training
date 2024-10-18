@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Draggable Exercises</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .drag-container {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .draggable-box {
+            width: 150px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            line-height: 50px;
+            cursor: move;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .draggable {
+            background-color: #2196F3;
+            color: white;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            cursor: move;
+            border-radius: 4px;
+            margin: 10px auto;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Draggable Exercises</h1>
+    </header>
+
+    <div class="drag-container" id="drop-zone">
+        <div id="draggable1" class="draggable-box" draggable="true">
+            Drag Me: Within Box
+        </div>
+    </div>
+
+    <div id="draggable2" class="draggable" draggable="true">
+        Drag Me: Within Window
+    </div>
+
+    <footer>
+        © 2024 Draggable Divs Exercise
+    </footer>
+
+    <script>
+        const draggables = document.querySelectorAll('[draggable="true"]');
+        const dropZone = document.getElementById('drop-zone');
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', dragStart);
+        });
+
+        function dragStart(e) {
+            e.dataTransfer.setData('text/plain', e.target.id);
+        }
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault(); 
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const id = e.dataTransfer.getData('text');
+            const draggableElement = document.getElementById(id);
+            dropZone.appendChild(draggableElement);
+            e.dataTransfer.clearData();
+        });
+    </script>
+    
+</body>
+</html>

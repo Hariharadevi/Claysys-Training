@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>css basics review</title>
+    <style>
+    p.ridge {border-style: ridge;}
+        nav {
+            background-color: #333;
+            text-align: center;
+
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container1{
+            width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #bdbebd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2{
+         width: 100%;
+         margin:50px auto;
+         padding: 20px;
+         background-color: #bdbebd;   
+        }
+        .container3{
+            width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e6fc22;
+        }
+        .container4{
+            width: 100%;
+            margin:50px auto;
+            padding: 20px;
+            background-color: #bdbebd;   
+        }
+        .container5{
+            width: 100%;
+            margin:50px auto;
+            padding: 20px;
+            background-color: #bdbebd; 
+        }
+        .container6{
+            width: 100%;
+            margin: 50px auto;
+            padding:20px;
+            background-color: #bdbebd;
+        }
+        .container7{
+            width:100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #bdbebd;
+        }
+        .container8{
+            width: 100%;
+            margin: 50px auto;
+            padding:20 px;
+            background-color: #bdbebd;
+        }
+        .container9{
+            width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #bdbebd;
+
+        }
+        footer{
+            text-align: center;
+            padding: 5px;
+            background-color: #bdbebd;
+        }
+        </style>
+<body>
+<p class="ridge">
+<h1 align="center">CSS Basics Review</h1>
+<nav>
+    <a href="#"><center>Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</center></a>
+</nav>
+
+   
+    <div class="container1">
+    <h1 align="left"><b>Universal Selector Example</b></h1>
+    <p>This paragraphis styled using the universal selectors (*) whixh applies to all the element</p>
+    </div>
+    <div class="container2">
+    <h1 align="left"><b>Type Selector Example</b></h1>
+    <h2 align="left"><b><small>Heading and paragraph</small></b></h2>
+    <p>
+        This is an example of a paragraph styled by the type selectors
+    </p>
+    </div>
+    <div class="container3">
+        <h1 align="left"><b>Class selectors example</b></h1>
+        <p>This selection is styled using a class selectors named.highlight</p>
+    </div>
+    <div class="container4">
+        <h1 align="left" style="color: red;">ID Selector Example</h1>
+        <p style="color: red;">This section is styled using an ID selector named #unique</p>
+
+    </div>
+    <div class="container5">
+        <h1 align="left"><b>Attribute selector example</b></h1>
+        <p>Type Your Name:</p>
+        <input type="text" id="name" label="your name" name="name" required>
+    </div>
+    <div class="container6">
+        <h1 align="left"><b>Descendant Selector Example</b></h1>
+        <p>This paragraph is inside a div and styled by descendant selector(div p) </p>
+    </div>
+    <div class="container7">
+        <h1 align="left"><b>child Selector Example</b></h1>
+        <ul>
+            <li>First child item styled using child Selector(ul>li)</li>
+            <li>Another child item in this list</li>
+        </ul>
+    </div>
+    <div class="container8">
+        <h1 align="left"><b><small>Adjacent siblin gselector example</small></b></h1>
+        <h2 align="left"><b><high>This a Heading</high></b></h2>
+        <p>This paragraph is styled as an adjacent sibling to the above Heading(h2+p)</p>
+
+    </div>
+    <div class="container9">
+        <h1 align="left"><b><small>General Sibling selector example</small></b></h1>
+        <h2 align="left"><b>Another Heading</b></h2>
+        <p>This paragraph is styled as a general sibling to the above heading (h2~p)</p>
+    </div>
+    <footer>
+        <p><center> @2024 CSS Selectors practise</center></p>
+    </footer>
+    
+</p>
+ 
+</body>
