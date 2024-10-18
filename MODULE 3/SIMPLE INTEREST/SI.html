@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Advanced Simple Interest Calculator</title>
+    <link rel="stylesheet" href="sy.css">
+    <script type="text/javascript" src="node.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Advanced Simple Interest Calculator</h2>
+        <label for="principal">Principal Amount:</label>
+        <input type="text" id="principal" placeholder="Enter principal amount">
+        
+        <label for="rate">Rate of Interest (%):</label>
+        <input type="text" id="rate" placeholder="Enter interest rate">
+        
+        <label for="time">Time (Years):</label>
+        <input type="text" id="time" placeholder="Enter time in years">
+        
+        <button onclick="calculateInterest()">Calculate Interest</button>
+        <p><strong>Interest:</strong> <span id="interest"></span></p>
+        <p><strong>Total Amount:</strong> <span id="totalAmount"></span></p>
+        <p><strong>Additional Information:</strong><span id="additionalInfo"></span></p>
+    </div>
+</body>
+</html>
