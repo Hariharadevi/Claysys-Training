@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<style>
+    .container{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        
+    }
+    .one{
+        background-color:greenyellow;
+        margin:5px;
+        height:200px;
+        width:200px;
+        flex-basis: 20% ;
+
+    }
+    .two{
+        background-color: blue;
+        margin:5px;
+        height: 200px;
+        width:200px;
+        flex-basis: 20%;
+    }
+    .three{
+        background-color: rgb(50, 235, 65);
+        margin:5px;
+        height: 200px;
+        width:200px;
+        flex-basis: 20%;
+    }
+    @media screen and (max-width:800px) {
+       .one{
+        flex-basis: 100%;
+
+       } 
+       .two{
+        flex-basis: 30%;
+
+       } 
+       .three{
+        flex-basis: 40%;
+
+       } 
+    }
+    @media screen and (max-width:600px) {
+       .one{
+        flex-basis: 100%;
+
+       } 
+       .two{
+        flex-basis: 100%;
+
+       } 
+       .three{
+        flex-basis: 40%;
+
+       } 
+    }
+    @media screen and (max-width:500px) {
+        .one{
+            flex-basis: 100%;
+        }
+        .two{
+            flex-basis: 100%;
+        }
+        .three{
+            flex-basis: 100%;
+        
+        
+    }
+    }
+   
+</style>
+<div class="container">
+    <div class="one"></div>
+</div>
+<div class="container">
+    <div class="two"></div>
+    <div class="two"></div>
+    <div class="two"></div>
+</div>
+<div class="container">
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+</div>
