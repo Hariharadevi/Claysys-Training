@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        .highlight{
+            background-color:yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content"> OLD VERSION</div>
+
+    <img id="logo" src="logo.png" alt="Logo">
+
+    <input type="text" id="inputfield" value="old value">
+    <br>
+    <br>
+
+    <div id="parent">
+        <p>child 1</p>
+    </div>
+    <br>
+    <br>
+    <div id="toremove">This Message Will be removed</div>
+
+    <div id="box">content</div>
+
+    <div class="highlight" id="box2">content 2</div>
+
+
+    <script>
+       // $('#content').html('NEW VERSION')
+       $('#content').text('NEW VERSION')
+
+       $('#logo').attr('src','new logo.png')
+
+       $('#logo').attr('alt','New Logo')
+
+       $('#inputfield').val("New Value")
+
+       $('#parent').append('child 2')
+       $('#parent').prepend('child 0')
+
+       $('#toremove').remove();
+
+       $('#box').addClass('highlight')
+
+       $('#box2').removeClass('highlight')
+
+    </script>
+</body>
+</html>

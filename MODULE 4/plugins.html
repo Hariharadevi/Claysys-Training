@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree View with Handsontable</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+  <style>
+    #tree, #table {
+      margin: 20px;
+    }
+    #tree {
+      width: 300px;
+    }
+    #table {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="tree"></div>
+  <div id="table"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+  
+  <script>
+
+    let emails = [
+      {name: "Dharani", email: "dhara@gmail.com", age: 23},
+      {name: "Deepa", email: "deepajasmin@yahoo.com", age: 22},
+      {name: "Mounika", email: "mouni@hotmail.com", age: 35},
+      {name: "Mohan Ram", email: "ram@gmail.com", age: 28},
+      {name: "Varun Karthick", email: "varun@yahoo.com", age: 40}
+    ];
+
+    let emailProviders = {
+      gmail: [],
+      yahoo: [],
+      hotmail: []
+    };
+
+    emails.forEach((item, index) => {
+      let provider = item.email.split('@')[1].split('.')[0];
+      if (emailProviders[provider]) {
+ 
+        emailProviders[provider].push({...item, s_no: index + 1});
+      }
+    });
+    
+    let treeData = Object.keys(emailProviders).map(provider => {
+      return {
+        text: provider.charAt(0).toUpperCase() + provider.slice(1),
+        children: emailProviders[provider].map(email => {
+          return { text: email.email, data: email }; 
+        })
+      };
+    });
+
+    $('#tree').jstree({
+      'core': {
+        'data': treeData
+      }
+    });
+
+    let container = document.getElementById('table');
+    let hot = new Handsontable(container, {
+      data: [],
+      rowHeaders: false,
+      colHeaders: ['S.No', 'Name', 'Email', 'Age'],  
+      columns: [
+        {data: 's_no'},  
+        {data: 'name'},  
+        {data: 'email'}, 
+        {data: 'age'}    
+      ],
+      stretchH: 'all',
+      width: 500,
+      height: 200
+    });
+
+    $('#tree').on("select_node.jstree", function (e, data) {
+      if (data.node.data) {
+        hot.loadData([data.node.data]);
+      }
+    });
+  </script>
+  
+</body>
+</html>

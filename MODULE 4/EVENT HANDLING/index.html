@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+</head>
+<body>
+    <button id="myButton">click me</button>
+    <br>
+    <br>
+    <br>
+
+    <div id="hoverDiv" style="width: 100px;height: 100px;background-color:gray;"></div>
+    <br>
+    <br>
+    <br>
+
+    <input type="text" id="inputfield" placeholder="Focus on Me">
+    <br>
+    <br>
+    <br>
+
+
+    <div id="parent">
+        <button class="child">Child Button</button>
+    </div>
+
+    <script>
+        $('#myButton').click(function(){
+            alert('Button Clicked')
+        })
+
+        $('#hoverDiv').hover(function(){
+            $(this).css('background-color','yellow')
+            
+        }, function(){
+            $(this).css('background-color','gray')
+        })
+
+        $('#inputfield').focus(function(){
+            $(this).css('border','2px solid green')
+        })
+
+        $('#inputfield').blur(function(){
+            $(this).css('border','2px solid brown')
+
+        })
+  
+        $('#parent').on('click','.child',function (){
+               alert('Child Button Clicked')
+         })
+
+      $('#myButton').on('click', showalert)
+      function showalert(){
+        alert('button clicked!')
+      }
+
+
+
+    </script>
+</body>
+</html>

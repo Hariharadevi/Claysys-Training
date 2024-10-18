@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="Uniquevalue">content</div>
+    <br>
+    <br>
+
+    <div class="box">content 1</div>
+    <div class="box">content 2</div>
+    <br>
+    <br>
+
+    <p>Implementing jquery Selectors</p>
+    <p>using element selectors hide the elements</p>
+    <br>
+    <br>
+
+    <form action=" ">
+        <input type="Text" placeholder="Enter name">
+        <input type="password" placeholder="Enter password">
+        <input type="text" name="username">
+        <input type="email" name="email id">
+    </form>
+    <br>
+    <br>
+
+
+
+    <a href="https://example.com">Basic Examples</a>
+    <a href="https://example.org">Jquery Examples</a>
+    <a href="https://google.com">Google</a>
+    <br>
+    <br>
+
+
+    <div class="container">
+        <p>Descendant Selectors</p>
+    </div>
+
+    <div class="parent">
+        <p>Direct Child</p>
+        <div>
+            <p>Not a Direct Child</p>
+        </div>
+    </div>
+
+    <script>
+        $('#Uniquevalue').text('new content')
+
+        $('.box').css('background-color','pink')
+
+        //$('p').hide();
+
+        $('[placeholder]').css('border','2px solid blue')
+
+        $('[name=username]').val('Default username')
+
+        $('a[href*="example"]').css('color','brown')
+        $('a[href^="https://google"]').css('color','black')
+
+        $('.container p').css('color','red')
+
+        $('.parent > p').css('font-weight','bold')
+
+    </script>
+</body>
+</html>
