@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\bin\Debug\InventoryForm.exe.config
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\bin\Debug\InventoryForm.exe
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\bin\Debug\InventoryForm.pdb
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.Form1.resources
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.Properties.Resources.resources
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.exe
+C:\Users\Administrator\source\repos\InventoryForm\InventoryForm\obj\Debug\InventoryForm.pdb
